@@ -20,4 +20,4 @@ phases:
 artifacts:
   files:
     - target/devops-challenge-cicd.war
-  discard-paths: no
+  discard-paths: nonextwork
