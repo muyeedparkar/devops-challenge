@@ -1,0 +1,35 @@
+<settings>
+
+    <servers>
+    <server>
+        <id>devops-challenge-devops-challenge-cicd</id>
+        <username>aws</username>
+        <password>${env.CODEARTIFACT_AUTH_TOKEN}</password>
+    </server>
+    </servers>
+
+    <profiles>
+    <profile>
+        <id>devops-challenge-devops-challenge-cicd</id>
+        <activation>
+        <activeByDefault>true</activeByDefault>
+        </activation>
+        <repositories>
+        <repository>
+            <id>devops-challenge-devops-challenge-cicd</id>
+            <url>https://devops-challenge-288761743166.d.codeartifact.us-west-2.amazonaws.com/maven/devops-challenge-cicd/</url>
+        </repository>
+        </repositories>
+    </profile>
+    </profiles>4
+
+    <mirrors>
+    <mirror>
+        <id>devops-challenge-devops-challenge-cicd</id>
+        <name>devops-challenge-devops-challenge-cicd</name>
+        <url>https://devops-challenge-288761743166.d.codeartifact.us-west-2.amazonaws.com/maven/devops-challenge-cicd/</url>
+        <mirrorOf>*</mirrorOf>
+    </mirror>
+    </mirrors>
+
+</settings>
